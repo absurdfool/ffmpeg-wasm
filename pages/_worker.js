@@ -6,6 +6,3 @@ export default {
 		return res;
 	},
 };
-export {
-  ffmpeg_wasm_default as default
-};
