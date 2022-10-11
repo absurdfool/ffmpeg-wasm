@@ -1,4 +1,4 @@
-export default {
+export {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname.startsWith('/api/')) {
