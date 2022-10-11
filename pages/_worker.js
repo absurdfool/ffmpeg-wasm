@@ -1,4 +1,4 @@
-var ffmpeg_wasm_default = {
+var ffmpeg_wasm_default export = {
 	async fetch(request,env) {
 		const res = env.ASSETS.fetch(request);
 		res.headers.append("Cross-Origin-Embedder-Policy", "require-corp");
