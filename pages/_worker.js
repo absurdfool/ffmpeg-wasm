@@ -7,5 +7,5 @@ export default {
 	},
 };
 export {
-  ffmpeg_wasm_default as default export
+  ffmpeg_wasm_default as default
 };
