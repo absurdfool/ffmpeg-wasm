@@ -1,4 +1,4 @@
-default export {
+export default {
 	async fetch(request,env) {
 		const res = env.ASSETS.fetch(request);
 		res.headers.append("Cross-Origin-Embedder-Policy", "require-corp");
