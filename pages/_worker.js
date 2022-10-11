@@ -1,13 +1,11 @@
-export default {
-async function handleRequest(request) {
-
-  let originalResponse = await fetch(request)
-
-  let response = new Response(originalResponse.body,originalResponse);
-
-  response.headers.set('Cross-Origin-Embedder-Policy', 'require-corp');
-  response.headers.set('Cross-Origin-Opener-Policy','same-origin');
-
-  return response
-}
-}
+var ffmpeg_wasm_default = {
+	async fetch(request,env) {
+		const res = env.ASSETS.fetch(request);
+		res.headers.append("Cross-Origin-Embedder-Policy", "require-corp");
+		res.headers.append("Cross-Origin-Opener-Policy", "same-origin");
+		return res;
+	},
+};
+export {
+  ffmpeg_wasm_default as default
+};
