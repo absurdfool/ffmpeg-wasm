@@ -1,7 +1,3 @@
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
-})
-
 async function handleRequest(request) {
 
   let originalResponse = await fetch(request)
