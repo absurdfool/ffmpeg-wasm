@@ -1,3 +1,4 @@
+export default {
 async function handleRequest(request) {
 
   let originalResponse = await fetch(request)
@@ -8,4 +9,5 @@ async function handleRequest(request) {
   response.headers.set('Cross-Origin-Opener-Policy','same-origin');
 
   return response
+}
 }
